@@ -3,7 +3,7 @@
 Bem-vindo ao meu portfólio!  
 Aqui você encontra meus projetos, habilidades e um pouco sobre minha jornada como desenvolvedor.
 
-🔗 **Acesse:** (adicione aqui o link do seu site)
+🔗 **Acesse:** https://lucasmdl21.github.io/My_PORTIFOLIO/
 
 ---
 
@@ -15,11 +15,11 @@ Olá! Meu nome é **Lucas Maia**, sou desenvolvedor em formação, apaixonado po
 
 ## 🚀 Tecnologias utilizadas
 
-- ⚛️ React
-- ⚡ Vite
-- 🎨 CSS
-- 🧠 JavaScript
-- 🔥 Git & GitHub
+- ⚛️ React  
+- ⚡ Vite  
+- 🎨 CSS  
+- 🧠 JavaScript  
+- 🔥 Git & GitHub  
 
 ---
 
