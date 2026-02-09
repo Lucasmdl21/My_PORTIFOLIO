@@ -1,0 +1,89 @@
+
+
+
+/* Container Principal */
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: calc(100vh - 80px);
+  animation: fadeIn 1.2s ease-out;
+}
+
+/* Conteúdo de Texto */
+.homeContent h1 {
+  font-size: clamp(3rem, 10vw, 8rem);
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #fff, #4facfe, #00f2fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.homeContent p {
+  font-size: 1.2rem;
+  color: #a0a0a0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+}
+
+/* Container de Ícones */
+.iconsHome {
+  display: flex;
+  gap: 25px;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.iconsHome:hover {
+  transform: translateY(-5px);
+  border-color: rgba(79, 172, 254, 0.5);
+}
+
+/* Estilização Individual dos Ícones */
+.iconsHome svg {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0));
+}
+
+.iconsHome .iconOne:hover {
+  color: #00050a !important; /* Muda a cor ao passar o mouse */
+  transform: scale(1.3);
+  filter: drop-shadow(0 0 12px rgba(173, 175, 177, 0.8));
+}
+.iconsHome .iconTwo:hover {
+  color: #2b6fb3 !important; /* Muda a cor ao passar o mouse */
+  transform: scale(1.3);
+  filter: drop-shadow(0 0 12px rgba(114, 158, 203, 0.8));
+}
+.iconsHome .iconThree:hover {
+  color: #E1306C !important; /* Muda a cor ao passar o mouse */
+  transform: scale(1.3);
+  filter: drop-shadow(0 0 12px rgb(166, 78, 107));
+}
+.iconsHome .iconFour:hover {
+  color: #4f24ac !important; /* Muda a cor ao passar o mouse */
+  transform: scale(1.3);
+  filter: drop-shadow(0 0 12px rgb(166, 78, 107));
+}
+.iconsHome .iconFive:hover {
+  color: #c92c2c !important; /* Muda a cor ao passar o mouse */
+  transform: scale(1.3);
+  filter: drop-shadow(0 0 12px rgb(166, 78, 78));
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

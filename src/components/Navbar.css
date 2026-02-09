@@ -1,0 +1,146 @@
+
+
+/* Navbar principal */
+.navbar {
+  width: 100%;
+  background-color: var(--nav-bg);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Container interno */
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo opcional */
+.logo {
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  color: var(--nav-text);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* Lista padrão (desktop) */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Links */
+.nav-list li a {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: var(--nav-text);
+  font-size: 1.1rem;
+  font-weight: 800;
+  position: relative;
+  padding: 4px 0;
+  transition: color var(--transition-speed) ease;
+  outline: none;
+}
+
+/* Animação underline */
+.nav-list li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--nav-accent);
+  transition: width var(--transition-speed) ease;
+}
+
+.nav-list li a:hover,
+.nav-list li a:focus-visible {
+  color: var(--nav-accent);
+}
+
+.nav-list li a:hover::after,
+.nav-list li a:focus-visible::after {
+  width: 100%;
+}
+
+/* Acessibilidade */
+.nav-list li a:focus-visible {
+  outline: 2px dashed var(--nav-accent);
+  outline-offset: 4px;
+}
+
+/* Botão hambúrguer */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 22px;
+  border-radius: 60%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background-color: var(--nav-text);
+  border-radius: 2px;
+  transition: all var(--transition-speed) ease;
+}
+/* Animação quando aberto */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: var(--nav-bg);
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 0;
+    transform: translateY(-200%);
+    transition: transform var(--transition-speed) ease;
+  }
+
+  .nav-list.active {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,122 @@
+/* --- Animações de Entrada --- */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Animação extra para os ícones no hover */
+@keyframes iconBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes iconShake {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 80px); 
+  color: var(--text-white);
+  padding: 20px;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.contactContainer h2 {
+  color: var(--text-white);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 4rem;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.contactContainer h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  box-shadow: 0 0 15px var(--accent-color);
+}
+
+.contactLinks {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.contactBtn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 40px;
+  text-decoration: none;
+  color: var(--text-white);
+  font-weight: 600;
+  font-size: 1.2rem;
+  background: var(--glass-effect);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  transition: all var(--transition-speed) ease;
+  backdrop-filter: blur(10px);
+  min-width: 260px;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* --- Cores Específicas dos Ícones --- */
+.btn-whatsapp .iconOne {
+  color: #45f06e; /* Verde WhatsApp suave */
+  filter: drop-shadow(0 0 5px rgba(69, 240, 110, 0.3));
+}
+
+.btn-email .iconOne {
+  color: #4da6ff; /* Azul e-mail suave */
+  filter: drop-shadow(0 0 5px rgba(77, 166, 255, 0.3));
+}
+
+/* --- Delays e Hover --- */
+.contactLinks .contactBtn:nth-child(1) { animation-delay: 0.4s; }
+.contactLinks .contactBtn:nth-child(2) { animation-delay: 0.6s; }
+
+.contactBtn:hover {
+  background: var(--nav-accent);
+  color: var(--nav-bg);
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(65, 100, 104, 0.4);
+}
+
+/* Quando o botão recebe hover, o ícone anima e muda de cor para combinar com o texto */
+.contactBtn:hover .iconOne {
+  color: var(--nav-bg); 
+}
+
+.btn-whatsapp:hover .iconOne {
+  animation: iconBounce 0.5s infinite alternate;
+}
+
+.btn-email:hover .iconOne {
+  animation: iconShake 0.3s infinite;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .contactContainer h2 { font-size: 1.8rem; margin-bottom: 3rem; }
+  .contactLinks { flex-direction: column; align-items: center; }
+  .contactBtn { width: 100%; max-width: 320px; }
+}

@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --nav-bg: #111;
+  --nav-text: #fff;
+  --nav-accent: #00bcd4;
+  --transition-speed: 0.3s;
+  --bg-dark: #0a0a0a;
+  --text-white: #ffffff;
+  --text-gray: #b0b0b0;
+  --accent-color: #00bcd4;
+  --glass-effect: rgba(255, 255, 255, 0.03);
+}
+
+
+.App {
+  min-height: 100vh;
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  overflow-x: hidden;
+}
+
+
+/* Efeito de Bolinhas Caindo (Neve) */
+.App::after {
+  content: "";
+  position: fixed;
+  top: -100%; /* Começa acima da tela */
+  left: 0;
+  width: 100%;
+  height: 200%; /* Altura dupla para o loop ser fluido */
+  z-index: 0;
+  pointer-events: none; /* Não atrapalha os cliques nos botões */
+  
+  /* Criando as bolinhas com Radial Gradients */
+  background-image: 
+    radial-gradient(circle, #fff 1px, transparent 1px),
+    radial-gradient(circle, #fff 1.5px, transparent 1.5px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.5) 1px, transparent 1px);
+  
+  /* Tamanhos diferentes para cada camada de bolinhas */
+  background-size: 550px 550px, 400px 400px, 300px 300px;
+  
+  /* Posições iniciais variadas */
+  background-position: 0 0, 150px 250px, 70px 100px;
+  
+  opacity: 0.3; /* Deixa as bolinhas sutis */
+  animation: snowFall 15s linear infinite;
+}
+
+/* Animação para fazer as bolinhas descerem */
+@keyframes snowFall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50%); /* Move metade da altura (100vh) */
+  }
+}
+
+/* Ajuste no App para garantir que o fundo fique atrás de tudo */
+.App {
+  position: relative;
+  background-color: var(--bg-dark);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Garante que o conteúdo fique acima das bolinhas */
+.homeContainer, .contactContainer, .navbar {
+  position: relative;
+  z-index: 2;
+}

@@ -1,0 +1,142 @@
+
+/* Container com Fade In */
+.aboutContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  min-height: calc(100vh - 80px);
+  animation: fadeInContainer 1s ease-out forwards;
+}
+.aboutPicture {
+  flex: 1;
+  height: 450px;
+  background: var(--glass-effect);
+  border-radius: 30px;
+  border: 1px solid rgba(0, 188, 212, 0.2);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.1);
+  animation: slideInRight 0.8s ease-out 0.5s forwards, float 6s ease-in-out infinite;
+  opacity: 0;
+
+  /* 🔥 Centralização correta */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutPicture img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+/* Título com brilho animado */
+.Subtitle {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+  background: linear-gradient(90deg, #00bcd4, #fff, #00bcd4);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite;
+}
+
+.textAbout {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: var(--text-gray);
+  max-width: 550px;
+  opacity: 0;
+  animation: slideInLeft 0.8s ease-out 0.3s forwards;
+}
+
+/* Moldura da imagem */
+.aboutPicture {
+  flex: 1;
+  height: 450px;
+  background: var(--glass-effect);
+  border-radius: 30px;
+  border: 1px solid rgba(0, 188, 212, 0.2);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.1);
+  animation: slideInRight 0.8s ease-out 0.5s forwards, float 6s ease-in-out infinite;
+  opacity: 0;
+}
+
+/* Efeito de luz flutuante atrás da imagem */
+.aboutPicture::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0, 188, 212, 0.1) 0%, transparent 70%);
+  animation: rotate 10s linear infinite;
+}
+
+/* --- KEYFRAMES --- */
+
+@keyframes fadeInContainer {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes shine {
+  to { background-position: 200%; }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .aboutContainer {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .textAbout {
+    font-size: 1rem;
+    line-height: 1.9;
+    text-align: justify;
+    color: var(--text-gray);
+    opacity: 0;
+    animation: slideInLeft 0.8s ease-out 0.3s forwards;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .aboutPicture {
+    width: 100%;
+    height: 300px;
+  }
+}
