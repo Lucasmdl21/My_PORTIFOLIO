@@ -6,7 +6,7 @@
       "descricao": "Interface de filmes com design moderno, responsivo e animado.",
       "tecnologias": ["React", "CSS", "API"],
       "link": "https://lucasmdl21.github.io/Films-React/",
-      "imagem": "/My_PORTIFOLIO/images/films-react.png"
+      "imagem": "images/films-react.png"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "descricao": "Site com histórias bíblicas organizadas para leitura.",
       "tecnologias": ["React", "CSS3"],
       "link": "https://lucasmdl21.github.io/Historias-biblicas-React/",
-      "imagem": "/My_PORTIFOLIO/images/HistoriasBiblicas.png"
+      "imagem": "images/HistoriasBiblicas.png"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "descricao": "Cartão com efeito 3D usando CSS e interações visuais.",
       "tecnologias": ["HTML", "CSS"],
       "link": "https://lucasmdl21.github.io/Card3D/",
-      "imagem": "/My_PORTIFOLIO/images/Card3D.png"
+      "imagem": "images/Card3D.png"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "descricao": "Cronômetro funcional com controle de tempo.",
       "tecnologias": ["HTML", "CSS", "JavaScript"],
       "link": "https://lucasmdl21.github.io/Cronometro-JS/",
-      "imagem": "/My_PORTIFOLIO/images/Cronometro.png"
+      "imagem": "images/Cronometro.png"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "descricao": "Formulário com validações usando JavaScript.",
       "tecnologias": ["HTML", "CSS", "JavaScript"],
       "link": "https://lucasmdl21.github.io/Fornulario_JS/",
-      "imagem": "/My_PORTIFOLIO/images/FormularioJS.png"
+      "imagem": "images/FormularioJS.png"
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "descricao": "Aplicação que exibe frases motivacionais aleatórias.",
       "tecnologias": ["HTML", "CSS", "JavaScript"],
       "link": "https://lucasmdl21.github.io/Frases-Motivacionais/",
-      "imagem": "/My_PORTIFOLIO/images/FrasesMotivacionais.png"
+      "imagem": "images/FrasesMotivacionais.png"
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "descricao": "Jogo simples de cliques para treinar lógica e interações.",
       "tecnologias": ["HTML", "CSS", "JavaScript"],
       "link": "https://lucasmdl21.github.io/Jogo-De_click-No-animal/",
-      "imagem": "/My_PORTIFOLIO/images/.JogoDoClick.png"
+      "imagem": "images/JogoDoClick.png"
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@
       "descricao": "Site que mostra o clima em tempo real usando API.",
       "tecnologias": ["HTML", "CSS", "JavaScript", "API"],
       "link": "https://lucasmdl21.github.io/Tempo-Now-JS/",
-      "imagem": "/My_PORTIFOLIO/images/SiteDeTempoAPI.png"
+      "imagem": "images/SiteDeTempoAPI.png"
     },
     {
       "id": 9,
@@ -70,7 +70,7 @@
       "descricao": "Site institucional para loja de relógios.",
       "tecnologias": ["HTML", "CSS"],
       "link": "https://lucasmdl21.github.io/Tempo-Now-JS/",
-      "imagem": "/My_PORTIFOLIO/images/SiteRelojoaria.png"
+      "imagem": "images/SiteRelojoaria.png"
     },
     {
       "id": 10,
@@ -78,7 +78,7 @@
       "descricao": "Lista de tarefas com adicionar, remover e salvar itens.",
       "tecnologias": ["HTML", "CSS", "JavaScript"],
       "link": "https://lucasmdl21.github.io/to-do-list/",
-      "imagem": "/My_PORTIFOLIO/images/ToDoListJS.png"
+      "imagem": "images/ToDoListJS.png"
     }
   ]
 }
