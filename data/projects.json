@@ -1,0 +1,85 @@
+{
+  "projetos": [
+    {
+      "id": 1,
+      "nome": "Films React",
+      "descricao": "Interface de filmes com design moderno, responsivo e animado.",
+      "tecnologias": ["React", "CSS", "API"],
+      "link": "https://lucasmdl21.github.io/Films-React/",
+      "imagem": "/images/films-react.png"
+    },
+        {
+      "id": 2,
+      "nome": "Histórias Bíblicas",
+      "descricao": "Site com histórias bíblicas organizadas para leitura.",
+      "tecnologias": ["React, CSS3"],
+      "link": "https://lucasmdl21.github.io/Historias-biblicas-React/",
+      "imagem": "/images/HistoriasBiblicas.png"
+    },
+  
+    {
+      "id": 3,
+      "nome": "Card 3D",
+      "descricao": "Cartão com efeito 3D usando CSS e interações visuais.",
+      "tecnologias": ["HTML", "CSS"],
+      "link": "https://lucasmdl21.github.io/Card3D/",
+      "imagem": "/images/Card3D.png"
+    },
+    {
+      "id": 4,
+      "nome": "Cronômetro",
+      "descricao": "Cronômetro funcional com controle de tempo.",
+      "tecnologias": ["HTML", "CSS", "JavaScript"],
+      "link": "https://lucasmdl21.github.io/Cronometro-JS/",
+      "imagem": "/images/Cronometro.png"
+    },
+    {
+      "id": 5,
+      "nome": "Formulário JS",
+      "descricao": "Formulário com validações usando JavaScript.",
+      "tecnologias": ["HTML", "CSS", "JavaScript"],
+      "link": "https://lucasmdl21.github.io/Fornulario_JS/",
+      "imagem": "/images/FormularioJS.png"
+    },
+    {
+      "id": 6,
+      "nome": "Frases Motivacionais",
+      "descricao": "Aplicação que exibe frases motivacionais aleatórias.",
+      "tecnologias": ["HTML", "CSS", "JavaScript"],
+      "link": "https://lucasmdl21.github.io/Frases-Motivacionais/",
+      "imagem": "/images/FrasesMotivacionais.png"
+    },
+  {
+      "id": 7,
+      "nome": "Jogo do Click",
+      "descricao": "Jogo simples de cliques para treinar lógica e interações.",
+      "tecnologias": ["HTML", "CSS", "JavaScript"],
+      "link": "https://lucasmdl21.github.io/Jogo-De_click-No-animal/",
+      "imagem": "/images/.JogoDoClick.png"
+    },
+    {
+      "id": 8,
+      "nome": "Site de Tempo (API)",
+      "descricao": "Site que mostra o clima em tempo real usando API.",
+      "tecnologias": ["HTML", "CSS", "JavaScript", "API"],
+      "link": "https://lucasmdl21.github.io/Tempo-Now-JS/",
+      "imagem": "/images/SiteDeTempoAPI.png"
+    },
+    {
+      "id": 9,
+      "nome": "Site de Relojoaria",
+      "descricao": "Site institucional para loja de relógios.",
+      "tecnologias": ["HTML", "CSS"],
+      "link": "https://lucasmdl21.github.io/Tempo-Now-JS/",
+      "imagem": "/images/SiteRelojoaria.png"
+    },
+    {
+      "id": 10,
+      "nome": "To Do List JS",
+      "descricao": "Lista de tarefas com adicionar, remover e salvar itens.",
+      "tecnologias": ["HTML", "CSS", "JavaScript"],
+      "link": "https://lucasmdl21.github.io/to-do-list/",
+      "imagem": "/images/ToDoListJS.png"
+    }
+  ]
+}
