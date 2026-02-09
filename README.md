@@ -40,7 +40,7 @@ Olá! Meu nome é **Lucas Maia**, sou desenvolvedor em formação, apaixonado po
 
 | Meio       | Link / Informação |
 |-----------|-----------------|
-| 📧 Email  | lucasmaiadaluz12345@gmail.com |
+| 📧 Email  | [lucasmaiadaluz12345@gmail.com](mailto:lucasmaiadaluz12345@gmail.com) |
 | 💼 LinkedIn | [Lucas da Luz](https://www.linkedin.com/in/lucas-da-luz-462a3b378) |
 | 📱 WhatsApp | [Chamar no WhatsApp](https://wa.me/5598295275) |
 | 🎥 YouTube | [Tentando Codar](https://youtube.com/@tentandocodar-b4w?si=nft4fZBfC2XzRR8l) |
