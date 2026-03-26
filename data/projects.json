@@ -67,7 +67,7 @@
     {
       "id": 9,
       "nome": "Site de Relojoaria",
-      "descricao": "Site institucional para loja de relógios.",
+      "descricao": "Site institucional para loja de relógios(Esse foi meu primeiro site criado sozinho).",
       "tecnologias": ["HTML", "CSS"],
       "link": "https://lucasmdl21.github.io/Tempo-Now-JS/",
       "imagem": "images/SiteRelojoaria.png"
@@ -79,6 +79,14 @@
       "tecnologias": ["HTML", "CSS", "JavaScript"],
       "link": "https://lucasmdl21.github.io/to-do-list/",
       "imagem": "images/ToDoListJS.png"
+    },
+    {
+      "id": 11,
+      "nome": "Relógio Digital",
+      "descricao": "Relogio com uma interface moderna.",
+      "tecnologias": ["HTML", "CSS", "JavaScript"],
+      "link": "https://lucasmdl21.github.io/Relogio-Digital/",
+      "imagem": "images/Clock.png"
     }
   ]
 }
