@@ -1,5 +1,5 @@
 // ROTAS
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {  HashRouter, Routes, Route } from "react-router-dom";
 
 // ICONS
 import {
@@ -23,7 +23,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <Navbar />
 
@@ -93,7 +93,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
